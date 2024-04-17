@@ -1,0 +1,4 @@
+# Data input
+obj.allmarkers <- FindAllMarkers(obj, min.pct = 0.2, only.pos = TRUE)
+# Markers Selection
+stat_marker <- subset(obj.allmarkers, abs(avg_log2FC) > 0.2)
